@@ -1,4 +1,11 @@
 .header {
   position: relative;
   background: red;
+}
+
+.hero__profile-image {
+  background-image: url(img/shaia.jpg);
+  max-width: 100%;
+  border-radius: 50%;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */
