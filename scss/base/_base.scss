@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Headings
+$text-heading-l: 28px;
+
+//Fonts
+$font-size-medium: 18px;
+
+//Colors
+$green-color: #09c372;
+$black-color: #000;

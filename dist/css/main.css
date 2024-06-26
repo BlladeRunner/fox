@@ -1,11 +1,74 @@
-.header {
-  position: relative;
-  background: red;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
+body {
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__brand {
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+}
+.header__brand a {
+  color: #09c372;
+}
+.header .navbar__nav-links {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.header .navbar__nav-links li {
+  padding: 5px;
+  margin-left: 10px;
+}
+.header .navbar__nav-links li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.header .navbar__nav-links li a {
+  color: #000;
+}
+
+.hero {
+  margin-top: 50px;
+  background-color: yellow;
+}
 .hero__profile-image {
   background-image: url(img/shaia.jpg);
+  background-position: center;
+  background-size: cover;
   max-width: 100%;
   border-radius: 50%;
-  background-position: center;
+  background-color: red;
+  border: red;
+  position: relative;
+  z-index: 1;
+}
+.hero .text-heading-l {
+  font-size: 28px;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
