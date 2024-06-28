@@ -1,21 +1,35 @@
 .hero {
-  margin-top: 50px;
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  padding: 30px 0;
 
   &__profile-image {
-    background-image: url(img/shaia.jpg);
-    background-position: center;
-    background-size: cover;
-    max-width: 100%;
+    background: url(/img/hamid.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: red;
-    border: red;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 30px;
+    border: 2px solid $yellow-dark-color;
+    filter: drop-shadow(0 0 8px $carrot-color);
   }
 
-  .text-heading-l {
-    font-size: $text-heading-l;
-    font-weight: bold;
+  .text-heading-1 {
+    font-size: $text-heading-1;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .text-heading-4 {
+    margin-top: 20px;
+    font-size: $text-heading-4;
+    text-align: center;
+  }
+  button {
+    margin-top: 20px;
   }
 }

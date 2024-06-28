@@ -9,12 +9,20 @@
 body {
   font-weight: 400;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Nunito", sans-serif;
   margin: 0 auto;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #ff6464;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  border: none;
 }
 
 .header {
@@ -103,21 +111,34 @@ a {
 }
 
 .hero {
-  margin-top: 50px;
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  padding: 30px 0;
 }
 .hero__profile-image {
-  background-image: url(img/shaia.jpg);
-  background-position: center;
-  background-size: cover;
-  max-width: 100%;
+  background: url(/img/hamid.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  align-items: center;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background-color: red;
-  border: red;
-  position: relative;
-  z-index: 1;
+  margin-bottom: 30px;
+  border: 2px solid #cddc39;
+  filter: drop-shadow(0 0 8px #ff5722);
 }
-.hero .text-heading-l {
-  font-size: 28px;
-  font-weight: bold;
+.hero .text-heading-1 {
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+.hero .text-heading-4 {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.hero button {
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
