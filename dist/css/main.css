@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 a {
@@ -18,11 +19,13 @@ a {
 }
 
 .btn {
+  display: block;
   padding: 10px 20px;
+  border: none;
   background-color: #ff6464;
   font-family: "Nunito", sans-serif;
+  font-size: 20px;
   color: #fff;
-  border: none;
 }
 
 .header {
@@ -30,9 +33,14 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-top: 20px;
+  }
+}
 .header__brand {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   align-items: center;
   display: flex;
   margin-left: 10px;
@@ -40,14 +48,20 @@ a {
 .header__brand a {
   color: #09c372;
 }
+@media only screen and (min-width: 768px) {
+  .header__brand {
+    margin-left: 40px;
+  }
+}
 .header .navbar__nav-links {
   list-style: none;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 20px;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 @media only screen and (max-width: 600px) {
   .header .navbar__nav-links {
@@ -111,34 +125,61 @@ a {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   margin: 0 10px;
   padding: 30px 0;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 120px;
+  }
 }
 .hero__profile-image {
   background: url(/img/hamid.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  align-items: center;
-  width: 200px;
-  height: 200px;
+  display: block;
+  margin: auto;
+  margin-bottom: 34px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  margin-bottom: 30px;
   border: 2px solid #cddc39;
-  filter: drop-shadow(0 0 8px #ff5722);
+  filter: drop-shadow(0 0 20px #ff5722);
 }
-.hero .text-heading-1 {
-  font-size: 32px;
+@media only screen and (min-width: 768px) {
+  .hero__profile-image {
+    grid-area: 1/2;
+  }
+}
+.hero__headings {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .hero__headings {
+    margin-left: 148px;
+    text-align: initial;
+    max-width: 45ch;
+  }
+}
+.hero__headings .text-heading-1 {
+  font-size: 42px;
   font-weight: 900;
-  text-align: center;
+  margin-bottom: 21px;
 }
-.hero .text-heading-4 {
-  margin-top: 20px;
+.hero__headings .text-heading-4 {
   font-size: 14px;
-  text-align: center;
+  margin-bottom: 27px;
 }
 .hero button {
-  margin-top: 20px;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  .hero button {
+    grid-area: 3/1;
+    margin-left: 148px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 a {
@@ -18,11 +19,11 @@ a {
 }
 
 // Headings
-$text-heading-1: 32px;
+$text-heading-1: 42px;
 $text-heading-4: 14px;
 
 //Fonts
-$font-size-medium: 18px;
+$font-size-medium: 20px;
 
 //Colors
 $green-color: #09c372;

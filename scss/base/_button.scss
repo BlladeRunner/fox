@@ -1,7 +1,9 @@
 .btn {
+  display: block;
   padding: 10px 20px;
+  border: none;
   background-color: $rose-color;
   font-family: "Nunito", sans-serif;
+  font-size: $font-size-medium;
   color: $white-color;
-  border: none;
 }

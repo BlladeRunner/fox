@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+
   &__brand {
     font-weight: bold;
     font-size: $font-size-medium;
@@ -11,6 +15,9 @@
     margin-left: 10px;
     a {
       color: $green-color;
+    }
+    @media only screen and (min-width: 768px) {
+      margin-left: 40px;
     }
   }
 
@@ -21,8 +28,9 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      font-size: $font-size-medium;
       font-weight: bold;
-      margin-right: 10px;
+      margin-right: 40px;
 
       @media only screen and (max-width: 600px) {
         display: none;
