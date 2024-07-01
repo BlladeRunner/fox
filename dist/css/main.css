@@ -90,7 +90,7 @@ a {
     display: none;
   }
 }
-.header #hamburger-icon div {
+.header #hamburger-icon .bars {
   width: 40px;
   height: 5px;
   background-color: #000;
@@ -98,7 +98,18 @@ a {
   border-radius: 50px;
   transition: 0.4s;
 }
-.header #hamburger-icon .mobile-menu {
+.header #hamburger-icon .open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.header #hamburger-icon .open .bar2 {
+  opacity: 0;
+}
+.header #hamburger-icon .open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, 8px);
+  transform: rotate(45deg) translate(-9px, -9px);
+}
+.header .mobile-menu {
   display: none;
   position: absolute;
   top: 50px;
@@ -106,22 +117,11 @@ a {
   height: calc(100vh - 50px);
   width: 100%;
 }
-.header .open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
+.header #menuToggle {
+  display: none;
 }
-.header .open .bar2 {
-  opacity: 0;
-}
-.header .open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, 8px);
-  transform: rotate(45deg) translate(-9px, -9px);
-}
-.header .open .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+.header #menuToggle:checked ~ .mobile-menu {
+  display: block;
 }
 
 .hero {
@@ -182,4 +182,6 @@ a {
     grid-area: 3/1;
     margin-left: 148px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
