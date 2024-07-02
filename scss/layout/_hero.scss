@@ -5,11 +5,6 @@
   align-items: center;
   justify-content: center;
 
-  @media only screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 120px;
-  }
-
   &__profile-image {
     background: url(/img/hamid.jpg);
     background-repeat: no-repeat;
@@ -21,21 +16,11 @@
     height: 250px;
     border-radius: 50%;
     border: 2px solid $yellow-dark-color;
-    filter: drop-shadow(0 0 20px $carrot-color);
-
-    @media only screen and (min-width: 768px) {
-      grid-area: 1 / 2;
-    }
+    box-shadow: 12px 12px 2px 1px $android-green-color;
   }
 
   &__headings {
     text-align: center;
-
-    @media only screen and (min-width: 768px) {
-      margin-left: 148px;
-      text-align: initial;
-      max-width: 45ch;
-    }
 
     .text-heading-1 {
       font-size: $text-heading-1;
@@ -51,9 +36,5 @@
 
   button {
     margin: auto;
-    @media only screen and (min-width: 768px) {
-      grid-area: 3 / 1;
-      margin-left: 148px;
-    }
   }
 }
