@@ -12,13 +12,23 @@
     }
 
     .post {
+      display: grid;
+      gap: 12px;
       background-color: $white-color;
       padding: 12px 19px;
       border-radius: 5px;
 
-      .post-heading {
+      &__heading {
         font-size: $font-size-medium;
         font-weight: 900;
+      }
+
+      &__info {
+        font-size: $text-heading-4;
+      }
+
+      &__text {
+        font-size: $text-heading-4;
       }
     }
   }
