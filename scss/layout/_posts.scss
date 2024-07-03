@@ -1,3 +1,25 @@
 .posts {
   background-color: #edf7fa;
+
+  &__recent {
+    padding: 25px 10px;
+    margin-top: 30px;
+    display: grid;
+    gap: 17px;
+
+    .recent-header {
+      text-align: center;
+    }
+
+    .post {
+      background-color: $white-color;
+      padding: 12px 19px;
+      border-radius: 5px;
+
+      .post-heading {
+        font-size: $font-size-medium;
+        font-weight: 900;
+      }
+    }
+  }
 }
