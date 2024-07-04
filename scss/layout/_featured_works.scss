@@ -1,3 +1,17 @@
 .featured-works {
   background-color: $white-color;
+
+  &__heading {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  &__presentations {
+    display: grid;
+    grid-gap: 25px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0 15px;
+  }
 }
