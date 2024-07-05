@@ -9,6 +9,7 @@
 
     .recent-header {
       text-align: center;
+      font-size: $font-size-s;
     }
 
     .post {
@@ -20,16 +21,16 @@
       box-shadow: 5px 5px $lightblue-color;
 
       &__heading {
-        font-size: $font-size-medium;
+        font-size: $font-size-m;
         font-weight: 900;
       }
 
       &__info {
-        font-size: $text-heading-4;
+        font-size: $font-size-xs;
       }
 
       &__text {
-        font-size: $text-heading-4;
+        font-size: $font-size-xs;
       }
     }
   }

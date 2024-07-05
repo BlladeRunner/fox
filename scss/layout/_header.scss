@@ -12,7 +12,7 @@
       align-items: center;
       list-style: none;
       height: 100%;
-      font-size: $font-size-medium;
+      font-size: $font-size-m;
       font-weight: bold;
       left: 75%;
 
@@ -88,7 +88,7 @@
       a {
         color: $white-color;
         letter-spacing: 5px;
-        font-size: $font-size-large;
+        font-size: $font-size-l;
         &:hover {
           text-decoration: underline;
           text-underline-offset: 10px;
