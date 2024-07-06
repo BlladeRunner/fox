@@ -45,7 +45,14 @@
       &__text {
         font-size: $font-size-xs;
         margin-top: 24px;
+        margin-bottom: 17px;
       }
     }
+  }
+  hr {
+    margin-bottom: 200px;
+    width: 90%;
+    opacity: 0.3;
+    margin: 0 auto;
   }
 }
