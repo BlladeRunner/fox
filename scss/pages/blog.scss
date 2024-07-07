@@ -1,16 +1,17 @@
 @import "../base/base";
 @import "../base/button";
-@import "../layout/header";
-@import "../layout/footer";
 
-//Layout
+// Layout
+@import "../layout/header";
 @import "../layout/posts";
+@import "../layout/footer";
 
 .posts-container {
   padding: 0 18px;
   &__header {
     text-align: left;
     font-size: $font-size-xl;
+    font-weight: bold;
   }
 
   .post {
