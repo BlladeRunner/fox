@@ -11,8 +11,6 @@
     display: grid;
     grid-gap: 25px;
     grid-auto-flow: column;
-    overflow-x: auto;
-    scrollbar-width: none;
     padding: 0 15px;
 
     .presentation {
@@ -50,7 +48,6 @@
     }
   }
   hr {
-    margin-bottom: 200px;
     width: 90%;
     opacity: 0.3;
     margin: 0 auto;
