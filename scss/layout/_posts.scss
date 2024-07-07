@@ -1,36 +1,32 @@
-.posts {
-  background-color: $ultra-lightblue-color;
+.posts-container {
+  display: grid;
+  gap: 17px;
+  padding: 25px 10px;
+  margin-top: 30px;
 
-  &__recent {
+  &__header {
+    text-align: center;
+    font-size: $font-size-s;
+  }
+
+  .post {
     display: grid;
-    gap: 17px;
-    padding: 25px 10px;
-    margin-top: 30px;
+    gap: 12px;
+    background-color: $white-color;
+    padding: 12px 19px;
+    border-radius: 5px;
 
-    .recent-header {
-      text-align: center;
-      font-size: $font-size-s;
+    &__heading {
+      font-size: $font-size-m;
+      font-weight: 900;
     }
 
-    .post {
-      display: grid;
-      gap: 12px;
-      background-color: $white-color;
-      padding: 12px 19px;
-      border-radius: 5px;
+    &__info {
+      font-size: $font-size-xs;
+    }
 
-      &__heading {
-        font-size: $font-size-m;
-        font-weight: 900;
-      }
-
-      &__info {
-        font-size: $font-size-xs;
-      }
-
-      &__text {
-        font-size: $font-size-xs;
-      }
+    &__text {
+      font-size: $font-size-xs;
     }
   }
 }

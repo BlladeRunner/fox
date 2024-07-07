@@ -1,16 +1,7 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "reset";
 
 body {
-  font-weight: 400;
-  box-sizing: border-box;
   font-family: "Nunito", sans-serif;
-  margin: 0 auto;
   max-width: 1440px;
 }
 

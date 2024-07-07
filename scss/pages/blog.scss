@@ -1,0 +1,19 @@
+@import "../base/base";
+@import "../base/button";
+@import "../layout/header";
+@import "../layout/footer";
+
+//Layout
+@import "../layout/posts";
+
+.posts-container {
+  padding: 0 18px;
+  &__header {
+    text-align: left;
+    font-size: $font-size-xl;
+  }
+
+  .post {
+    padding: 12px 0;
+  }
+}
