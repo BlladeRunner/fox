@@ -6,13 +6,14 @@
 
   &__social-icons {
     display: grid;
-    grid-template-columns: repeat(8, 2fr);
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 35px;
     margin-bottom: 20px;
+    margin-left: 35px;
   }
 
   &__copyright {
     font-size: $font-size-xxs;
+    margin-left: 35px;
   }
 }
