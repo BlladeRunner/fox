@@ -1,19 +1,23 @@
 .footer-bottom {
   padding: 0 15px;
   margin-top: 150px;
-  margin-bottom: 54px;
   align-items: center;
+  justify-content: center;
 
   &__social-icons {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 35px;
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 20px;
-    margin-left: 35px;
+    a {
+      display: block;
+      margin: auto;
+    }
   }
 
   &__copyright {
     font-size: $font-size-xxs;
-    margin-left: 35px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 54px;
   }
 }
