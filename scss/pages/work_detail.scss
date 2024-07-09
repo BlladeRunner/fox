@@ -1,0 +1,39 @@
+@import "../base/base";
+@import "../base/button";
+
+// Layout
+@import "../layout/header";
+@import "../layout/featured_works";
+@import "../layout/footer";
+
+.featured-works {
+  &__heading {
+    padding: 0 18px;
+    text-align: left;
+    font-size: $font-size-xl;
+    font-weight: bold;
+  }
+  &__presentations {
+    display: block;
+
+    &__info {
+      font-size: $font-size-xs;
+      margin-top: 17px;
+      strong {
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: $font-size-xs;
+        border-radius: 50px;
+        background-color: $white-color;
+        padding: 3px 15px;
+        color: $white-color;
+        margin-left: 0;
+        margin-right: 22px;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  margin-top: 60px;
+}
