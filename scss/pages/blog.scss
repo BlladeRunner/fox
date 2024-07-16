@@ -3,10 +3,9 @@
 
 // Layout
 @import "../layout/header";
-@import "../layout/posts";
 @import "../layout/footer";
 
-.posts-container {
+.blog-container {
   padding: 0 18px;
   &__header {
     text-align: left;
@@ -14,8 +13,28 @@
     font-weight: bold;
   }
 
-  .post {
+  .blog {
+    display: grid;
+    gap: 12px;
+    background-color: $white-color;
+    border-radius: 5px;
     padding: 12px 0;
+
+    &__heading {
+      font-size: $font-size-m;
+      font-weight: 900;
+    }
+
+    &__sub-heading {
+      font-size: $font-size-xs;
+    }
+
+    &__content {
+      font-size: $font-size-xs;
+    }
+  }
+  hr {
+    opacity: .15;
   }
 }
 

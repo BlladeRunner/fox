@@ -60,8 +60,9 @@
     background-color: $android-green-color;
     position: absolute;
     top: 50px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 50px);    
     width: 100%;
+    overflow: hidden;
 
     &__links {
       display: grid;

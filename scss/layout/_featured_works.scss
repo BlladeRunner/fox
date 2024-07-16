@@ -8,7 +8,7 @@
   }
 
   &__presentations {
-    display: grid;
+    display: block;
     grid-gap: 25px;
     grid-auto-flow: column;
     padding: 0 15px;
@@ -24,7 +24,7 @@
         margin-top: 17px;
       }
 
-      &__info {
+      &__sub-heading {
         font-size: $font-size-xs;
         margin-top: 17px;
         strong {
@@ -32,7 +32,6 @@
           font-weight: bold;
           font-size: $font-size-xs;
           border-radius: 50px;
-          background-color: $darkblue-color;
           padding: 3px 15px;
           color: $white-color;
           margin-left: 0;
@@ -47,9 +46,9 @@
       }
     }
   }
+
   hr {
-    width: 90%;
-    opacity: 0.3;
-    margin: 0 auto;
+    opacity: 0.15;
+    margin-bottom: 22px;
   }
 }
