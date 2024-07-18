@@ -63,7 +63,7 @@
     height: calc(100vh - 50px);    
     width: 100%;
     overflow: hidden;
-
+    
     &__links {
       display: grid;
       list-style: none;
@@ -113,5 +113,24 @@
         }
       }
     }
+  }
+  .desktop-menu {
+    display: grid;     
+    justify-items: right;  
+
+    &__links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      font-weight: bold;
+      font-size: $font-size-m - 2px;
+      gap: 20px;
+      margin-right: 20px;
+      margin-top: 10px;
+      
+    }
+    @media only screen and (width < 601px) {
+      display: none;
+    }
+
   }
 }
