@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (width > 601px) {  
+    margin: 0 148px;
+  }
+
   &__social-icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -4,6 +4,10 @@
   padding: 25px 10px;
   margin-top: 30px;
 
+  @media only screen and (width > 601px) {  
+    margin: 0 148px;
+  }
+
   &__header {
     text-align: center;
     font-size: $font-size-s;

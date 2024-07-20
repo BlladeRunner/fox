@@ -1,6 +1,10 @@
 .featured-works {
   background-color: $white-color;
 
+  @media only screen and (width > 601px) {  
+    margin: 0 148px;
+  }
+
   &__heading {
     text-align: center;
     margin: 20px 0;
