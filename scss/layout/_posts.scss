@@ -3,34 +3,50 @@
   gap: 17px;
   padding: 25px 10px;
   margin-top: 30px;
-
-  @media only screen and (width > 601px) {  
-    margin: 0 148px;
-  }
-
+  
   &__header {
     text-align: center;
     font-size: $font-size-s;
+
+    @media only screen and (width > 601px) {  
+      text-align: left;
+      margin-left: 148px;
+    } 
   }
 
-  .post {
+  .posts {
     display: grid;
-    gap: 12px;
-    background-color: $white-color;
-    padding: 12px 19px;
-    border-radius: 5px;
+    gap: 20px;
+    
+    @media only screen and (width > 601px) {  
+      margin: 0 148px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }  
 
-    &__heading {
-      font-size: $font-size-m;
-      font-weight: 900;
-    }
+    .post {
+      padding: 12px 19px;
+      border-radius: 5px;
+      background-color: $white-color;
 
-    &__info {
-      font-size: $font-size-xs;
-    }
+      
+      &__heading {
+        font-size: $font-size-m;
+        font-weight: 900;
+        margin-bottom: 12px;        
+      }
 
-    &__text {
-      font-size: $font-size-xs;
+      &__info {
+        display: flex;
+        gap: 25px;
+        font-size: $font-size-xs;
+        margin-bottom: 19px;        
+      }
+
+      &__text {
+        font-size: $font-size-xs;        
+      }
     }
   }
 }
