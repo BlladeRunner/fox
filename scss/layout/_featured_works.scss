@@ -3,6 +3,7 @@
 
   @media only screen and (width > 601px) {  
     margin: 0 148px;
+    background-color: lime;
   }
 
   &__heading {
@@ -18,6 +19,13 @@
     padding: 0 15px;
 
     .presentation {
+
+      @media only screen and (width > 601px) {  
+        background-color: red;
+        display: flex;
+        
+      }
+
       &__image {
         min-width: 100%;
       }
