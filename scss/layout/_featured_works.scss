@@ -40,7 +40,6 @@
         .heading {
           font-size: $font-size-l;
           font-weight: 900;
-          margin-top: 17px;
         }
 
         .sub-heading {
@@ -68,7 +67,7 @@
   }
 
   hr {
-    opacity: 0.15;
+    color: rgba(0, 0, 0, 0.25);
     margin-bottom: 22px;
 
     @media only screen and (width > 601px) {
