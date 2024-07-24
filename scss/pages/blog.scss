@@ -7,10 +7,19 @@
 
 .blog-container {
   padding: 0 18px;
+
+  @media only screen and (width > 601px) {
+    margin: 140px 148px 70px 148px;
+  }
+
   &__header {
     text-align: left;
     font-size: $font-size-xl;
     font-weight: bold;
+
+    @media only screen and (width > 601px) {
+      font-size: $font-size-xxl + 2;
+    }
   }
 
   .blog {
@@ -23,14 +32,29 @@
     &__heading {
       font-size: $font-size-m;
       font-weight: 900;
+
+      @media only screen and (width > 601px) {
+        font-size: $font-size-xl;
+      }
     }
 
     &__sub-heading {
+      display: flex;
+      gap: 14px;
       font-size: $font-size-xs;
+
+      @media only screen and (width > 601px) {
+        font-size: $font-size-m - 2;
+        gap: 25px;
+      }
     }
 
     &__content {
       font-size: $font-size-xs;
+
+      @media only screen and (width > 601px) {
+        width: 70ch;
+      }
     }
   }
   hr {
