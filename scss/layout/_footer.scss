@@ -4,14 +4,15 @@
   align-items: center;
   justify-content: center;
 
-  @media only screen and (width > 601px) {  
-    margin: 0 148px;
+  @media only screen and (width > 601px) {
   }
 
   &__social-icons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 20px;
+    display: flex;
+    max-width: fit-content;
+    gap: 35px;
+    margin: auto;
+    margin-bottom: 26px;
     a {
       display: block;
       margin: auto;
