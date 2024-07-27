@@ -5,6 +5,18 @@
 @import "../layout/header";
 @import "../layout/footer";
 
+.header {
+  .desktop-menu {
+    &__links {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media only screen and (width < 601px) {
+      display: none;
+    }
+  }
+}
+
 .work_details {
   @media only screen and (width > 601px) {
     margin: 90px 235px 70px 235px;
