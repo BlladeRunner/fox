@@ -8,6 +8,11 @@
 .contacts {
   text-align: center;
 
+  @media only screen and (width > 601px) {
+    display: flex;
+    gap: 15px;
+  }
+
   &__image {
     height: 500px;
     margin: 50px auto;
