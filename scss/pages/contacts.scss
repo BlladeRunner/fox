@@ -4,3 +4,48 @@
 // Layout
 @import "../layout/header";
 @import "../layout/footer";
+
+.contacts {
+  text-align: center;
+
+  &__image {
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 0 80px;
+    border: 2px solid $yellow-dark-color;
+    box-shadow: 8px 8px 2px 1px $android-green-color;
+  }
+
+  &__heading {
+    font-size: $font-size-xxl;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
+
+  &__form {
+    align-items: center;
+    font-size: $font-size-l;
+
+    input {
+      border: none;
+      border-bottom: 2px solid $rose-color;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+
+    button {
+      margin: 50px auto;
+      padding: 10px 60px;
+      border-radius: 50px;
+    }
+  }
+
+  &__extra {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    margin: 0 25px;
+    font-size: $font-size-m;
+  }
+}
