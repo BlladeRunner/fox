@@ -9,8 +9,8 @@
   text-align: center;
 
   @media only screen and (width > 601px) {
+    margin: 90px 100px 70px 100px;
     display: flex;
-    gap: 15px;
   }
 
   &__image {
@@ -18,7 +18,10 @@
     margin: 50px auto;
     border-radius: 0 80px;
     border: 2px solid $yellow-dark-color;
-    box-shadow: 8px 8px 2px 1px $android-green-color;
+
+    @media only screen and (width > 601px) {
+      margin: 0 auto;
+    }
   }
 
   &__heading {
@@ -31,6 +34,10 @@
   &__form {
     align-items: center;
     font-size: $font-size-l;
+
+    @media only screen and (width > 601px) {
+      padding-top: 30px;
+    }
 
     input {
       border: none;
@@ -46,11 +53,18 @@
     }
   }
 
-  &__extra {
+  &__my-contacts {
     display: grid;
     gap: 20px;
     text-align: center;
     margin: 0 25px;
     font-size: $font-size-m;
+
+    @media only screen and (width > 601px) {
+      padding-top: 30px;
+      margin: 130px auto;
+      width: 13ch;
+      gap: 20px;
+    }
   }
 }
