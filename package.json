@@ -5,11 +5,15 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch --update --style=expanded scss:dist/css"
+    "start": "sass --watch --update --style=expanded scss:dist/css",
+    "tailstart": "npx tailwindcss -i ./css/tailwind.css -o ./dist/css/tailoutput.css --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.77.6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
   }
 }
