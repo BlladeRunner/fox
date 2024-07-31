@@ -1,52 +1,17 @@
 .posts-container {
-  display: grid;
-  gap: 17px;
-  padding: 25px 10px;
-  margin-top: 30px;
-  
   &__header {
-    text-align: center;
-    font-size: $font-size-s;
-
-    @media only screen and (width > 601px) {  
+    @media only screen and (width > 601px) {
       text-align: left;
       margin-left: 148px;
-    } 
+    }
   }
 
   .posts {
-    display: grid;
-    gap: 20px;
-    
-    @media only screen and (width > 601px) {  
+    @media only screen and (width > 601px) {
       margin: 0 148px;
       display: flex;
       align-items: center;
       justify-content: center;
-    }  
-
-    .post {
-      padding: 12px 19px;
-      border-radius: 5px;
-      background-color: $white-color;
-
-      
-      &__heading {
-        font-size: $font-size-m;
-        font-weight: 900;
-        margin-bottom: 12px;        
-      }
-
-      &__info {
-        display: flex;
-        gap: 25px;
-        font-size: $font-size-xs;
-        margin-bottom: 19px;        
-      }
-
-      &__text {
-        font-size: $font-size-xs;        
-      }
     }
   }
 }

@@ -9,15 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
-  <link rel="stylesheet" href="/dist/css/pages/home.css" />
   <link rel="stylesheet" type="text/css" href="/dist/css/tailoutput.css" />
+  <link rel="stylesheet" href="/dist/css/pages/home.css" />
 </head>
 
 <body>
 
   <!-- HEADER -->
 
-  <header class="header">
+  <header class="header grid h-12 relative">
 
     <input type="checkbox" id="menuToggle" />
     <label for="menuToggle" id="hamburger-icon">
@@ -46,27 +46,32 @@
 
   <!-- HERO -->
 
-  <section class="hero">
-    <div class="hero__profile-image"></div>
-    <div class="hero__headings">
-      <p class="text-5xl text-red-600 md:text-green-600">Hi, I am Rufus, Creative Technologist</p>
-      <p class="text-heading-4">
+  <section class="grid my-0 mx-2.5 py-30 px-o">
+    <div>
+      <img src="img/hamid.jpg" alt="profile image"
+        class="bg-no-repeat bg-contain w-[243px] h-[243px] mx-auto mt-8 mb-9 rounded-full border-s-2 border-2 border-#cddc39 shadow-[12px_12px_2px_1px_rgb(50,222,132)]">
+    </div>
+
+    <div class="text-center">
+      <p class="text-4xl font-black mb-7 mx-10">Hi, I am Rufus, Creative Technologist</p>
+      <p class="text-base mb-7">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-      <button class="btn">Download Resume</button>
+      <button class="block bg-[#ff6464] text-white rounded text-xl font-bold px-5 py-2.5 m-auto">Download
+        Resume</button>
     </div>
   </section>
 
   <!-- RECENT POSTS -->
 
-  <section class="posts-container">
-    <h2 class="posts-container__header">Recent posts</h2>
-    <div class="posts">
-      <div class="post">
-        <p class="post__heading">Making a design system from scratch</p>
-        <div class="post__info">
+  <section class="grid gap-4 py-6 px-2.5 bg-[#EDF7FA] mt-8">
+    <h2 class="text-center text-lg">Recent posts</h2>
+    <div class="grid gap-4">
+      <div class="px-5 py-3 rounded-md bg-white">
+        <p class="font-black text-[22px] mb-3">Making a design system from scratch</p>
+        <div class="flex gap-5 text-base mb-3">
           <p>12 Feb 2020</p>
           <p>|</p>
           <p>Design, Pattern</p>
@@ -77,14 +82,14 @@
           Exercitation veniam consequat sunt nostrud amet.
         </p>
       </div>
-      <div class="post">
-        <p class="post__heading">Creating pixel perfect icons in Figma</p>
-        <div class="post__info">
+      <div class="px-5 py-3 rounded-md bg-white">
+        <p class="font-black text-[22px] mb-3">Creating pixel perfect icons in Figma</p>
+        <div class="flex gap-5 text-base mb-3">
           <p>12 Feb 2020</p>
           <p>|</p>
           <p>Design, Pattern</p>
         </div>
-        <p class="post__text">
+        <p class="text-base">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
           Velit officia consequat duis enim velit mollit.
           Exercitation veniam consequat sunt nostrud amet.
@@ -95,19 +100,22 @@
 
   <!-- FEATURED WORKS -->
 
-  <section class="featured-works">
-    <p class="featured-works__heading">Featured works</p>
-    <div class="featured-works__presentations">
+  <section class="featured-works bg-white">
+    <p class="featured-works__heading text-center text-lg my-5">Featured works</p>
+    <div class="gap-[25px] px-3.5">
       <div class="presentation">
-        <a href="work_details.html"><img class="presentation__image" src="img/Designing Dashboards.svg"
+        <a href="work_details.html"><img class="min-w-full mb-4" src="img/Designing Dashboards.svg"
             alt="presentation image"></a>
 
         <div class="presentation__info">
           <a href="work_details.html">
-            <h3 class="heading">Designing Dashboards</h3>
+            <h3 class="text-2xl font-bold mb-4">Designing Dashboards</h3>
           </a>
-          <p class="sub-heading"><strong class="darkbluepill">2020</strong>Dashboard</p>
-          <p class="text">
+          <p class="mb-4 font-base">
+            <strong class="bg-[#142850] text-white font-black rounded-full py-1 px-3.5 mr-6">2020</strong>
+            <span class="text-[#8695A4]">Dashboard</span>
+          </p>
+          <p class="mb-4">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
             Velit officia consequat duis enim velit mollit.
             Exercitation veniam consequat sunt nostrud amet.
@@ -115,17 +123,18 @@
         </div>
 
       </div>
-
       <hr>
       <div class="presentation">
-        <a href="work_details.html"><img class="presentation__image" src="img/Vibrant Portraits of 2020.svg"
+        <a href="work_details.html"><img class="min-w-full mb-4" src="img/Vibrant Portraits of 2020.svg"
             alt="presentation image">
         </a>
         <div class="presentation__info"><a href="work_details.html">
-            <h3 class="heading">Vibrant Portraits of 2020</h3>
+            <h3 class="text-2xl font-bold mb-4">Vibrant Portraits of 2020</h3>
           </a>
-          <p class="sub-heading"><strong class="darkbluepill">2018</strong>Illustration</p>
-          <p class="text">
+          <p class="mb-4 font-base"><strong
+              class="bg-[#142850] text-white font-black rounded-full py-1 px-3.5 mr-6">2018</strong><span
+              class="text-[#8695A4]">Illustration</span></p>
+          <p class="mb-4">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
             Velit officia consequat duis enim velit mollit.
             Exercitation veniam consequat sunt nostrud amet.
@@ -134,35 +143,37 @@
       </div>
       <hr>
       <div class="presentation">
-        <a href="work_details.html"><img class="presentation__image" src="img/36 Days of Malayalam type.svg"
+        <a href="work_details.html"><img class="min-w-full mb-4" src="img/36 Days of Malayalam type.svg"
             alt="presentation image">
         </a>
         <div class="presentation__info"><a href="work_details.html">
-            <h3 class="heading">36 Days of Malayalam type</h3>
+            <h3 class="text-2xl font-bold mb-4">36 Days of Malayalam type</h3>
           </a>
-          <p class="sub-heading"><strong class="darkbluepill">2018</strong>Typography</p>
-          <p class="text">
+          <p class="mb-4 font-base"><strong
+              class="bg-[#142850] text-white font-black rounded-full py-1 px-3.5 mr-6">2018</strong><span
+              class="text-[#8695A4]">Typography</span></p>
+          <p class="mb-4">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
             Velit officia consequat duis enim velit mollit.
             Exercitation veniam consequat sunt nostrud amet.
           </p>
         </div>
       </div>
-      <hr>
+      <hr class="bg-[rgba(0, 0, 0, 0.25)]">
     </div>
 
   </section>
 
   <!-- FOOTER -->
 
-  <footer class="footer-bottom">
-    <div class="footer-bottom__social-icons">
+  <footer class="px-3.5 mt-36 items-center">
+    <div class="flex gap-9 max-w-max m-auto mb-6  ">
       <a><img src="img/fb.svg" alt="Facebook" class="fb"></a>
       <a><img src="img/insta.svg" alt="Instagram" class="insta"></a>
       <a><img src="img/x.svg" alt="X" class="x"></a>
       <a><img src="img/linkedin.svg" alt="LinkedIn" class="linkedin"></a>
     </div>
-    <div class="footer-bottom__copyright">Copyright ©2024 All rights reserved</div>
+    <div class="text-sm text-center mb-14">Copyright ©2024 All rights reserved</div>
   </footer>
 
 

@@ -1,15 +1,9 @@
 .featured-works {
-  background-color: $white-color;
-
   @media only screen and (width > 601px) {
     margin: 0 148px;
   }
 
   &__heading {
-    text-align: center;
-    margin: 20px 0;
-    font-size: $font-size-s;
-
     @media only screen and (width > 601px) {
       text-align: left;
       margin-left: 15px;
@@ -17,11 +11,6 @@
   }
 
   &__presentations {
-    display: block;
-    grid-gap: 25px;
-    grid-auto-flow: column;
-    padding: 0 15px;
-
     .presentation {
       @media only screen and (width > 601px) {
         display: flex;
@@ -29,47 +18,14 @@
       }
 
       &__image {
-        min-width: 100%;
-
         @media only screen and (width > 601px) {
           min-width: 25ch;
-        }
-      }
-
-      &__info {
-        .heading {
-          font-size: $font-size-l;
-          font-weight: 900;
-        }
-
-        .sub-heading {
-          font-size: $font-size-xs;
-          margin-top: 17px;
-          strong {
-            margin: 0 auto;
-            font-weight: bold;
-            font-size: $font-size-xs;
-            border-radius: 50px;
-            padding: 3px 15px;
-            color: $white-color;
-            margin-left: 0;
-            margin-right: 22px;
-          }
-        }
-
-        .text {
-          font-size: $font-size-xs;
-          margin-top: 24px;
-          margin-bottom: 17px;
         }
       }
     }
   }
 
   hr {
-    color: rgba(0, 0, 0, 0.25);
-    margin-bottom: 22px;
-
     @media only screen and (width > 601px) {
       margin-top: 10px;
     }

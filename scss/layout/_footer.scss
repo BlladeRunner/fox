@@ -1,28 +1,4 @@
 .footer-bottom {
-  padding: 0 15px;
-  margin-top: 150px;
-  align-items: center;
-  justify-content: center;
-
   @media only screen and (width > 601px) {
-  }
-
-  &__social-icons {
-    display: flex;
-    max-width: fit-content;
-    gap: 35px;
-    margin: auto;
-    margin-bottom: 26px;
-    a {
-      display: block;
-      margin: auto;
-    }
-  }
-
-  &__copyright {
-    font-size: $font-size-xxs;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 54px;
   }
 }
