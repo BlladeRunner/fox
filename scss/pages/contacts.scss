@@ -1,65 +1,26 @@
-@import "../base/base";
-@import "../base/button";
-
 // Layout
 @import "../layout/header";
 @import "../layout/footer";
 
 .contacts {
-  text-align: center;
-
   @media only screen and (width > 601px) {
     margin: 90px 100px 70px 100px;
     display: flex;
   }
 
   &__image {
-    height: 500px;
-    margin: 50px auto;
-    border-radius: 0 80px;
-    border: 2px solid $yellow-dark-color;
-
     @media only screen and (width > 601px) {
       margin: 0 auto;
     }
   }
 
-  &__heading {
-    font-size: $font-size-xxl;
-    font-weight: bold;
-    margin-bottom: 20px;
-    letter-spacing: 3px;
-  }
-
   &__form {
-    align-items: center;
-    font-size: $font-size-l;
-
     @media only screen and (width > 601px) {
       padding-top: 30px;
-    }
-
-    input {
-      border: none;
-      border-bottom: 2px solid $rose-color;
-      padding-top: 30px;
-      padding-bottom: 10px;
-    }
-
-    button {
-      margin: 50px auto;
-      padding: 10px 60px;
-      border-radius: 50px;
     }
   }
 
   &__my-contacts {
-    display: grid;
-    gap: 20px;
-    text-align: center;
-    margin: 0 25px;
-    font-size: $font-size-m;
-
     @media only screen and (width > 601px) {
       padding-top: 30px;
       margin: 130px auto;
