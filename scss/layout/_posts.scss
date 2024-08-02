@@ -1,17 +1,1 @@
-.posts-container {
-  &__header {
-    @media only screen and (width > 601px) {
-      text-align: left;
-      margin-left: 148px;
-    }
-  }
 
-  .posts {
-    @media only screen and (width > 601px) {
-      margin: 0 148px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-}
