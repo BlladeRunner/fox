@@ -1,0 +1,20 @@
+.hero {
+  @media only screen and (width > 601px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 140px 148px 70px 148px;
+  }
+
+  &__headings {
+    @media only screen and (width > 601px) {
+      order: 1;
+      text-align: left;
+      width: 45ch;
+    }
+
+    .btn {
+      @media only screen and (width > 601px) {
+        float: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="/dist/css/pages/contacts.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/tailoutput.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" id="hamburger-icon">
+            <div class="bars bar1"></div>
+            <div class="bars bar2"></div>
+            <div class="bars bar3"></div>
+        </label>
+
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/works.html">Works</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <nav class="desktop-menu">
+            <ul class="desktop-menu__links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/works.html">Works</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTACTS  -->
+
+    <section class="text-center">
+        <div
+            class="bg-[url('/img/contacts.jpeg')] bg-no-repeat bg-cover h-[500px] my-12 mx-4 border-[#cddc39] rounded-tr-[80px] rounded-bl-[80px]">
+        </div>
+        <form class="text-center text-[24px]">
+            <h1 class="text-[42px] font-black tracking-[3px] mb-8">Contact Us</h1>
+            <div class="input-container">
+                <input type="text" name="name" placeholder="Full Name" class="border-[#ff6464] border-b-2 my-1 py-3"
+                    required />
+            </div>
+            <div class="input-container">
+                <input type="email" name="email" placeholder="E-mail" class="border-[#ff6464] border-b-2 my-1 py-3"
+                    required />
+            </div>
+            <div class="input-container">
+                <input type="text" name="message" placeholder="Message" class="border-[#ff6464] border-b-2 my-1 py-3"
+                    required />
+            </div>
+            <button
+                class="bg-[#ff6464] text-white rounded text-xl font-bold px-12 py-2.5 mt-8 mb-8 tracking-[3px]">Contact
+                Us</button>
+        </form>
+        <div class="grid gap-5 text-2xl mt-5">
+            <div>
+                <p>
+                    <strong>Contact</strong>
+                </p>
+                <p>
+                    <a href="#"><span>rufus@gmail.com</span></a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <strong>Based in</strong>
+                </p>
+                <p>
+                    <span>Berlin, Germany</span>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer-bottom">
+        <div class="footer-bottom__social-icons">
+            <a><img src="img/fb.svg" alt="Facebook" class="fb"></a>
+            <a><img src="img/insta.svg" alt="Instagram" class="insta"></a>
+            <a><img src="img/x.svg" alt="X" class="x"></a>
+            <a><img src="img/linkedin.svg" alt="LinkedIn" class="linkedin"></a>
+        </div>
+        <div class="footer-bottom__copyright">Copyright ©2024 All rights reserved</div>
+    </footer>
+
+
+</body>
+
+</html>

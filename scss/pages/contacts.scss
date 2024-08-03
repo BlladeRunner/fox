@@ -1,0 +1,33 @@
+@import "../base/base";
+
+// Layout
+@import "../layout/header";
+@import "../layout/footer";
+
+.contacts {
+  @media only screen and (width > 601px) {
+    margin: 90px 100px 70px 100px;
+    display: flex;
+  }
+
+  &__image {
+    @media only screen and (width > 601px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__form {
+    @media only screen and (width > 601px) {
+      padding-top: 30px;
+    }
+  }
+
+  &__my-contacts {
+    @media only screen and (width > 601px) {
+      padding-top: 30px;
+      margin: 130px auto;
+      width: 13ch;
+      gap: 20px;
+    }
+  }
+}
