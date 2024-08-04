@@ -15,25 +15,3 @@
     }
   }
 }
-
-.work_details {
-  @media only screen and (width > 601px) {
-    margin: 90px 235px 70px 235px;
-  }
-
-  &__presentations {
-    .presentation {
-      &__heading {
-        @media only screen and (width > 601px) {
-          font-size: $font-size-xl + 4;
-        }
-      }
-
-      &__image {
-        @media only screen and (width > 601px) {
-          height: 460px;
-        }
-      }
-    }
-  }
-}
