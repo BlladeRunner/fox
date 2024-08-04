@@ -3,36 +3,3 @@
 // Layout
 @import "../layout/header";
 @import "../layout/footer";
-
-.blog-container {
-  @media only screen and (width > 601px) {
-    margin: 140px 148px 70px 148px;
-  }
-
-  &__header {
-    @media only screen and (width > 601px) {
-      font-size: $font-size-xxl + 2;
-    }
-  }
-
-  .blog {
-    &__heading {
-      @media only screen and (width > 601px) {
-        font-size: $font-size-xl;
-      }
-    }
-
-    &__sub-heading {
-      @media only screen and (width > 601px) {
-        font-size: $font-size-m - 2;
-        gap: 25px;
-      }
-    }
-
-    &__content {
-      @media only screen and (width > 601px) {
-        width: 70ch;
-      }
-    }
-  }
-}
