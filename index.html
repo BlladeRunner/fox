@@ -20,22 +20,26 @@
   <header class="header grid h-12 relative">
 
     <input type="checkbox" id="menuToggle" />
-    <label for="menuToggle" id="hamburger-icon">
-      <div class="bars bar1"></div>
-      <div class="bars bar2"></div>
-      <div class="bars bar3"></div>
+    <label for="menuToggle" class="pt-4 mx-auto mr-5 md:hidden">
+      <div class="w-12 h-1.5 bg-black rounded mt-1"></div>
+      <div class="w-12 h-1.5 bg-black rounded mt-1"></div>
+      <div class="w-12 h-1.5 bg-black rounded mt-1"></div>
     </label>
 
-    <nav class="mobile-menu">
-      <ul class="mobile-menu__links">
-        <li><a href="/works.html">Works</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/contacts.html">Contacts</a></li>
+    <nav class="bg-[#32de84] absolute mt-16 h-screen w-full overflow-hidden md:hidden">
+      <ul class="grid text-center mt-12 uppercase font-black text-2xl text-white gap-5 ">
+        <li><a class="tracking-[8px] hover:underline hover:text-[darkcyan] hover:underline-offset-8"
+            href="/works.html">Works</a></li>
+        <li><a class="tracking-[8px] hover:underline hover:text-[darkcyan] hover:underline-offset-8"
+            href="/blog.html">Blog</a></li>
+        <li><a class="tracking-[8px] hover:underline hover:text-[darkcyan] hover:underline-offset-8"
+            href="/contacts.html">Contacts</a></li>
       </ul>
     </nav>
 
-    <nav class="desktop-menu">
-      <ul class="desktop-menu__links">
+    <nav class="grid justify-mr-5">
+      <ul
+        class="md:grid md:grid-cols-3 md:gap-5 md:font-black md:text-xl md:mt-7 md:mr-16 md:mx-auto md:mr-5 max-sm:hidden">
         <li><a href="/works.html">Works</a></li>
         <li><a href="/blog.html">Blog</a></li>
         <li><a href="/contacts.html">Contacts</a></li>
