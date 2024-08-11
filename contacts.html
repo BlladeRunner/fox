@@ -17,32 +17,32 @@
 
     <!-- HEADER -->
 
-    <header class="header grid h-12 relative">
+    <header class="grid relative">
+        <!-- Hidden checkbox that toggles the state -->
+        <input type="checkbox" id="menu-toggle" class="peer sr-only">
 
-        <input type="checkbox" id="menuToggle" />
-        <label for="menuToggle" class="pt-4 mx-auto mr-5 md:hidden">
-            <div class="w-12 h-1.5 bg-black rounded mt-1"></div>
-            <div class="w-12 h-1.5 bg-black rounded mt-1"></div>
-            <div class="w-12 h-1.5 bg-black rounded mt-1"></div>
+        <!-- Label that controls the checkbox -->
+        <label for="menu-toggle"
+            class="w-16 flex items-center ml-auto block cursor-pointer mt-8 md:mt-0 md:h-0 relative z-50 md:hidden">
+            <span
+                class="block w-12 h-1.5 bg-black rounded-full transition-transform duration-300 relative 
+                before:content-[''] before:absolute before:w-12 before:h-1.5 before:bg-black before:rounded-full before:-translate-y-3.5 before:transition-transform before:duration-300 
+                after:content-[''] after:absolute after:w-12 after:h-1.5 after:bg-black after:rounded-full after:translate-y-3.5 after:transition-transform after:duration-300
+                peer-checked:bg-transparent peer-checked:before:translate-y-0 peer-checked:before:rotate-45 peer-checked:after:translate-y-0 peer-checked:after:-rotate-45">
+            </span>
         </label>
 
-        <nav class="bg-[#32de84] absolute mt-16 h-screen w-full overflow-hidden md:hidden">
-            <ul class="grid text-center mt-12 uppercase font-black text-2xl text-white gap-5 ">
-                <li><a class="tracking-[8px] hover:underline hover:text-[darkcyan] hover:underline-offset-8"
-                        href="/index.html">Home</a></li>
-                <li><a class="tracking-[8px] hover:underline hover:text-[darkcyan] hover:underline-offset-8"
-                        href="/works.html">Works</a></li>
-                <li><a class="tracking-[8px] hover:underline hover:text-[darkcyan] hover:underline-offset-8"
-                        href="/blog.html">Blog</a></li>
-            </ul>
-        </nav>
-
-        <nav class="grid justify-mr-5">
+        <nav class="font-['Nunito, sans-serif'] bg-[#32de84] absolute top-0 left-0 mt-16 md:mt-5 md:m-auto md:mr-6 h-screen
+          w-full overflow-hidden hidden peer-checked:block transition-all duration-300 ease-in-out md:static md:h-auto
+          md:w-auto md:flex md:items-center md:bg-transparent" aria-label="navigation">
             <ul
-                class="md:grid md:grid-cols-3 md:gap-5 md:font-black md:text-xl md:mt-7 md:mx-auto md:mr-5 max-sm:hidden">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/works.html">Works</a></li>
-                <li><a href="/blog.html">Blog</a></li>
+                class="grid text-center mt-12 uppercase md:normal-case font-black text-2xl text-white gap-5 peer-checked:block md:flex md:gap-5 md:mt-0 md:text-black md:text-xl">
+                <li><a class="tracking-[8px] md:tracking-normal hover:underline hover:text-[darkcyan] hover:underline-offset-8"
+                        href="/index.html">Home</a></li>
+                <li><a class="tracking-[8px] md:tracking-normal hover:underline md:disabled:hover hover:text-[darkcyan] hover:underline-offset-8"
+                        href="/works.html">Works</a></li>
+                <li><a class="tracking-[8px] md:tracking-normal hover:underline hover:text-[darkcyan] hover:underline-offset-8"
+                        href="/blog.html">Blog</a></li>
 
             </ul>
         </nav>
